@@ -7,7 +7,7 @@ This repo contains the project listed as the header above for the
 The mock up shown
 [here](design-mockup-portfolio.pdf)
 is implemented and can be view 
-[here](https://github.com/carltonwin8/fewd-portfolio).
+[here](https://carltonwin8.github.io/fewd-portfolio).
 The files below and use my own pictures are used for the portfolio webiste.
 
  * [html](card.html)
