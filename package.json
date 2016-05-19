@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/carltonwin8/fewd-portfolio/issues"
   },
-  "homepage": "https://github.com/carltonwin8/fewd-portfolio#readme"
+  "homepage": "https://github.com/carltonwin8/fewd-portfolio#readme",
+  "devDependencies": {
+    "browser-sync": "^2.12.8",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-stylus": "^2.3.1"
+  }
 }

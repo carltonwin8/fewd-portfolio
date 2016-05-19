@@ -16,7 +16,7 @@ gulp.task ('stylus', function () {
     .pipe(gulp.dest('./'));
 });
 
-gulp.task ('init', ['styles']);
+gulp.task ('init', ['stylus']);
 
 gulp.task ('browser-sync',['init'], function () {
   browserSync.init({
