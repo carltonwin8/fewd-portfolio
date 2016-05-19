@@ -1,0 +1,19 @@
+{
+  "name": "fewd-portfolio",
+  "version": "1.0.0",
+  "description": "This repo contains the project listed as the header above for the [Udacity](http://www.udacity.com/) [Front-End Web Developer Nanodegree](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carltonwin8/fewd-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carltonwin8/fewd-portfolio/issues"
+  },
+  "homepage": "https://github.com/carltonwin8/fewd-portfolio#readme"
+}
