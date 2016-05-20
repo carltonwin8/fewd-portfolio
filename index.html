@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,100' rel='stylesheet'
+   type='text/css'>
   <link rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
     integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
@@ -11,71 +13,92 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <div class="container">
 
     <div class="row">
-      <div class="col-md-6">
-        <img src="images/cartoon.10percent.jpg"
-          alt="Logo is a ballon"
-          class="logo"/>
+      <div class="col-sm-6">
+        <picture>
+          <source media="(min-width: 900px)" srcset="images/cartoon.10percent.jpg" />
+          <source media="(min-width: 650px)" srcset="images/cartoon.5percent.jpg" />
+          <img src="images/cartoon.2percent.jpg"
+            alt="Logo is a ballon"
+            class="logo"/>
+        </picture>
       </div>
-      <div class="col-md-6">
-            <div class="col-md-12 name text-right">
-              <h1>Carlton Joseph</h1>
+      <div class="col-sm-6">
+            <div class="col-sm-12 name text-right text-uppercase">
+              <h1 class="title-super text-thin">Carlton Joseph</h1>
               <h4>Wannabe HTML/CS/Javascript Developer</h4>
-              <hr>
             </div>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-md-12">
-        <img src="images/IMG_2944.JPG"
-          alt="colored rocks on mountain side"
-          class="mainImage"/>
+      <div class="col-sm-12">
+        <hr>
+        <picture>
+          <source media="(min-width: 900px)" srcset="images/h1080/IMG_2944.JPG" />
+          <source media="(min-width: 650px)" srcset="images/h720/IMG_2944.JPG" />
+          <img src="images/h360/IMG_2944.JPG"
+            alt="colored rocks on mountain side"
+            class="mainImage"/>
+        </picture>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-md-12"><h2>Featured Work</h2></div>
+      <div class="col-sm-12"><h2 class="featuredWork">Featured Work</h2></div>
     </div>
 
     <div class="row">
 
-      <div class="col-md-4">
+      <div class="col-sm-4">
         <figure>
-          <img src="images/IMG_3777.JPG"
-            alt="camouflage horse"
-            class="featuredImages"/>
+          <picture>
+            <source media="(min-width: 900px)" srcset="images/h1080/IMG_3777.JPG" />
+            <source media="(min-width: 650px)" srcset="images/h720/IMG_3777.JPG" />
+            <img src="images/h360/IMG_3777.JPG"
+              alt="camouflage horse"
+              class="featuredImages"/>
+          </picture>
           <figcaption>
             <h3>Animal Card</h3>
-            <a href="https://carltonwin8.github.io/fewd-animal-card/">
-              https://carltonwin8.github.io/fewd-animal-card/</a>
+            <a href="https://carltonwin8.github.io/fewd-animal-card">
+              fewd-animal-card</a>
           </figcaption>
         </figure>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-sm-4">
         <figure>
-          <img src="images/IMG_3782.JPG"
-            alt="two motorcyles"
-            class="featuredImages"/>
+          <picture>
+            <source media="(min-width: 900px)" srcset="images/h1080/IMG_3782.JPG" />
+            <source media="(min-width: 650px)" srcset="images/h720/IMG_3782.JPG" />
+            <img src="images/h1080/IMG_3782.JPG"
+              alt="two motorcyles"
+              class="featuredImages"/>
+          </picture>
           <figcaption>
             <h3>Front End Grit</h3>
-            <a href="https://github.com/carltonwin8/fewdProject1">
-              https://github.com/carltonwin8/fewdProject1</a>
+            <a href="https://carltonwin8.github.io/fewdProject1">
+              fewdProject1</a>
           </figcaption>
         </figure>
       </div>
-      <div class="col-md-4">
+      <div class="col-sm-4">
         <figure>
-          <img src="images/IMG_6343.JPG"
-            alt="ballon over a city"
-            class="featuredImages"/>
+          <picture>
+            <source media="(min-width: 900px)" srcset="images/h1080/IMG_6343.JPG" />
+            <source media="(min-width: 650px)" srcset="images/h720/IMG_6343.JPG" />
+            <img src="images/h1080/IMG_6343.JPG"
+              alt="ballon over a city"
+              class="featuredImages"/>
+          </picture>
           <figcaption>
             <h3>Mockup To Article</h3>
-            <a href="https://github.com/carltonwin8/fwed-mockup-to-article">
-              https://github.com/carltonwin8/fwed-mockup-to-article</a>
+            <a href="https://carltonwin8.github.io/fwed-mockup-to-article">
+              fwed-mockup-to-article</a>
           </figcaption>
         </figure>
       </div>

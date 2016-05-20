@@ -1,11 +1,41 @@
+* {
+    font-family: Lato, sans-serif;
+    color: #2d3c49;
+    font-weight: 300;
+}
+
 .logo {
-    max-width: 100px;
+    max-height: 100px;
+    margin-top: 5px;
+}
+
+.title-super {
+    font-size: 50px;
+}
+
+.text-thin {
+    font-weight: 100;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #02b3e4;
 }
 
 .mainImage {
     max-width: 100%;
 }
 
+.featuredWork {
+    color: #7d97ad;
+}
+
 .featuredImages {
     max-width: 100%;
+    color: #7d97ad;
+}
+
+.text-muted {
+    color: #bcbbbb;
 }
