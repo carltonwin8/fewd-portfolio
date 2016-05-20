@@ -8,7 +8,7 @@ The final results of the files noted below can be seen
 [here](https://carltonwin8.github.io/fewd-portfolio).
 
  * [html](index.html)
- * [css](styles.css)
+ * [css](css/styles.css)
 
 The mock up shown
 [here](design-mockup-portfolio.pdf)
