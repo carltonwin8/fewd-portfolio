@@ -7,7 +7,7 @@ This repo contains the project listed as the header above for the
 The final results of the files noted below can be seen
 [here](https://carltonwin8.github.io/fewd-portfolio).
 
- * [html](card.html)
+ * [html](index.html)
  * [css](styles.css)
 
 The mock up shown
