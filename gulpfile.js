@@ -6,10 +6,12 @@ var browserSync = require('browser-sync').create();
 var gm = require('gulp-gm');var gm = require('gulp-gm');
 var fs = require('fs-extra');
 var rename = require('gulp-rename');
+var prettify = require('gulp-jsbeautifier');
 
 var paths = {
-  html : ['*.html'],
-  styles : ['*.css'],
+  htmlSrc : ['html/*.html'],
+  htmlDst : './',
+  css : 'css',
   stylus : ['stylus/**/*.styl'],
   clean : ['styles.css'],
   imgSrc : ['./images/*.JPG'], // logo and main img small jpg
@@ -59,14 +61,24 @@ gulp.task ('imgClean', function () {
     .pipe(clean());
 });
 
-gulp.task ('stylus', function () {
-  return gulp.src('./stylus/*.styl')
-    .pipe(stylus())
-    .pipe(cssbeautify())
-    .pipe(gulp.dest('./'));
+gulp.task ('html', function () {
+  return gulp.src(paths.htmlSrc)
+    .pipe(prettify({
+      indent_size: 2,
+      indent_char: ' '
+    }))
+    .pipe(gulp.dest(paths.htmlDst));
 });
 
-gulp.task ('init', ['stylus']);
+gulp.task ('stylus', function () {
+  fs.mkdirpSync(paths.css);
+  return gulp.src(paths.stylus)
+    .pipe(stylus())
+    .pipe(cssbeautify())
+    .pipe(gulp.dest(paths.css));
+});
+
+gulp.task ('init', ['stylus','html']);
 
 gulp.task ('browser-sync',['init'], function () {
   browserSync.init({
@@ -77,7 +89,7 @@ gulp.task ('browser-sync',['init'], function () {
 });
 
 gulp.task ('watch',['browser-sync'], function () {
-  gulp.watch(paths.html).on('change', browserSync.reload)
+  gulp.watch(paths.htmlDst).on('change', browserSync.reload)
   gulp.watch(paths.styles).on('change', browserSync.reload)
   gulp.watch(paths.stylus,['stylus']);
 });
